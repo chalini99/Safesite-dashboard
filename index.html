@@ -4,10 +4,11 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>SafeSite AI – Empowering Safety Through AI & IoT</title>
-  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
 </head>
 <body>
+  <!-- ===== NAVBAR ===== -->
   <header class="navbar">
     <div class="logo">SafeSite<span>AI</span></div>
     <nav>
@@ -20,6 +21,7 @@
     </nav>
   </header>
 
+  <!-- ===== HERO SECTION ===== -->
   <section class="hero">
     <div class="hero-content">
       <h1>Empowering Safety Through AI & IoT</h1>
@@ -31,6 +33,7 @@
     </div>
   </section>
 
+  <!-- ===== FEATURES ===== -->
   <section class="features">
     <h2>Smart Safety Features</h2>
     <div class="feature-grid">
@@ -52,15 +55,34 @@
     </div>
   </section>
 
-  <section class="dashboard">
-    <h2>Live Safety Dashboard</h2>
-    <div class="dashboard-preview">
-      <div class="metric">Heart Rate: <span id="hr">87 bpm</span></div>
-      <div class="metric">Temperature: <span id="temp">34.5 °C</span></div>
-      <div class="metric alert">Active Alerts: <span id="alerts">2</span></div>
+  <!-- ===== AI DETECTION SECTION ===== -->
+  <section class="ai-detection">
+    <h2>AI Helmet Detection</h2>
+    <p>Run real-time helmet violation detection using SafeSite AI.</p>
+    <button id="runAI" class="btn">Run AI Detection</button>
+    <p id="aiStatus" class="status"></p>
+
+    <h3>📊 Live Data</h3>
+    <p id="liveData">Loading latest site metrics...</p>
+
+    <div class="cta">
+      <a href="http://localhost:8501" target="_blank" class="btn-outline">
+        View Live Dashboard
+      </a>
     </div>
   </section>
 
+  <!-- ===== DASHBOARD PREVIEW ===== -->
+  <section class="dashboard">
+    <h2>Safety Overview</h2>
+    <div class="dashboard-preview">
+      <div class="metric">🌡️ Temperature: <span id="temp">-- °C</span></div>
+      <div class="metric">🧪 Gas Level: <span id="gas">-- ppm</span></div>
+      <div class="metric">⛑️ Helmet Violations: <span id="helmet">--</span></div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
   <section class="contact">
     <h2>Stay Connected with SafeSite AI</h2>
     <form id="contactForm">
@@ -71,6 +93,7 @@
     </form>
   </section>
 
+  <!-- ===== FOOTER ===== -->
   <footer>
     <p>📍 4th Floor, Innovate Hub, Koramangala, Bengaluru 560034</p>
     <p>📧 contact@safesiteai.in | ☎ +91 98123 45678</p>
@@ -78,6 +101,7 @@
     <small>© 2025 SafeSite AI – Empowering Safety Through AI & IoT.</small>
   </footer>
 
-  <script src="js/main.js"></script>
+  <!-- ===== JS SCRIPT ===== -->
+  <script src="main.js"></script>
 </body>
 </html>
