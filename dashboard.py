@@ -49,11 +49,10 @@ with st.sidebar:
     refresh_rate = st.slider("Auto refresh (seconds)", 1, 10, 3)
     auto_refresh = st.checkbox("Enable auto-refresh (re-runs every interval)", value=True)
     st.write("Camera and AI detection:")
-    st.caption("Run `sensor_sim.py` in a separate terminal to feed live sensor data.")
+    
     st.divider()
     st.markdown("**Forecasting engine:** " + ("Prophet (advanced)" if PROPHET_AVAILABLE else "Moving-average (fallback)"))
-    if not PROPHET_AVAILABLE:
-        st.caption("Tip: `pip install prophet` to enable advanced forecasting (optional).")
+    
 
 # ---------- Helpers ----------
 @st.cache_resource(show_spinner=False)
